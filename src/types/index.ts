@@ -1,9 +1,9 @@
-export type MenuItem = {
+export type MenuItems = {
   id: number;
   name: string;
   price: number;
 };
 
-export type OrderItem = MenuItem & {
+export type OrderItem = MenuItems & {
   quantity: number;
 };

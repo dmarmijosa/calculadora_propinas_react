@@ -1,8 +1,8 @@
-import { MenuItem, OrderItem } from "../types";
+import { MenuItems, OrderItem } from "../types";
 import { formatCurrency } from "../helpers";
 type OrderContentsProps = {
   order: OrderItem[];
-  removeItems: (id: MenuItem["id"]) => void;
+  removeItems: (id: MenuItems["id"]) => void;
 };
 export const OrderContents = ({ order, removeItems }: OrderContentsProps) => {
   return (
